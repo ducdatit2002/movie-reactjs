@@ -9,13 +9,12 @@ import { userReducer } from "./redux/reducer/reducer";
 
 import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
-import { spinnerReducer } from "./redux/reducer/spinner";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 let rootReducer = combineReducers({
   userReducer,
-  spinnerReducer,
+  spinnerReducer:
 });
 const store = createStore(
   rootReducer,

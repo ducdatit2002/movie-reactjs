@@ -22,6 +22,6 @@ export default function Spinner() {
       <PropagateLoader size={150} color="#36d7b7" speedMultiplier={3}/>
     </div>
   ):(
-    <></>
+    
   )
 }

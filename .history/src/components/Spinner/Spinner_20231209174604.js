@@ -2,9 +2,8 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { PropagateLoader } from 'react-spinners'
 export default function Spinner() {
-  let isLoading = useSelector((state) => state.spinnerReducer.isLoading)
-  console.log(isLoading);
-  return isLoading? (
+  let isLoading = useSelector(('.spinner)
+  return (
     <div
       style={{
         width: '100vw',
@@ -21,7 +20,5 @@ export default function Spinner() {
     >
       <PropagateLoader size={150} color="#36d7b7" speedMultiplier={3}/>
     </div>
-  ):(
-    <></>
   )
 }
